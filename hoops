@@ -1,0 +1,26 @@
+# Import native TI graphics and math libraries
+from ti_plotlib import *
+from random import randint
+
+def main():
+    # --- ENDPOINT 1: Initialization & Setup ---
+    cls()                    # Clear screen
+    window(0, 320, 0, 216)   # Set graphing window bounds
+    
+    # Your game or animation loop variables here
+    running = True
+    
+    # --- ENDPOINT 2: Main Execution / Event Loop ---
+    while running:
+        cls()
+        
+        # Example drawing commands (replace with your basketball/gridiron code)
+        draw_rect(50, 50, 40, 40)
+        draw_text(10, 10, "Basketball Game")
+        
+        # Simple exit condition or loop break
+        # (Press any key or let loop finish)
+        break
+
+if __name__ == "__main__":
+    main()
